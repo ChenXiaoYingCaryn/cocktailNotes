@@ -1,4 +1,4 @@
-package com.example.cocktailnotes.infra.repo;
+package com.example.cocktailnotes.infra.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.cocktailnotes.infra.entity.UserDo;

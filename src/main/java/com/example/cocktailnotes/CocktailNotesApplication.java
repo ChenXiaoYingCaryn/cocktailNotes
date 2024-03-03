@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.ArrayList;
 
 @SpringBootApplication
-@MapperScan("com.example.cocktailnotes.infra.repo")
+@MapperScan("com.example.cocktailnotes.infra.mapper")
 public class CocktailNotesApplication {
 
     public static void main(String[] args) {

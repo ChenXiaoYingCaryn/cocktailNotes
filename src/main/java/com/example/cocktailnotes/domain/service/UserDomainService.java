@@ -2,7 +2,7 @@ package com.example.cocktailnotes.domain.service;
 
 import com.example.cocktailnotes.domain.convert.UserDomainConvert;
 import com.example.cocktailnotes.domain.entity.UserEntity;
-import com.example.cocktailnotes.infra.repo.UserMapper;
+import com.example.cocktailnotes.infra.repo.UserRepository;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 public class UserDomainService {
 
     @Resource
-    private UserMapper userMapper;
+    private UserRepository userRepository;
 
     @Resource
     private UserDomainConvert userDomainConvert;
@@ -26,7 +26,17 @@ public class UserDomainService {
      * @param entity
      */
     public void insertOne(UserEntity entity){
-        userMapper.insert(userDomainConvert.convert(entity));
+        userRepository.insert(entity);
+    }
+
+    /**
+     * 根据微信id查询用户信息
+     *
+     * @param wechatId
+     * @return
+     */
+    public UserEntity queryUserInfo(String wechatId){
+        return userRepository.queryByWechatId(wechatId);
     }
 
 }

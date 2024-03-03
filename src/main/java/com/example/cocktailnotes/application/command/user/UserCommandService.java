@@ -1,4 +1,4 @@
-package com.example.cocktailnotes.application.command.User;
+package com.example.cocktailnotes.application.command.user;
 
 import com.example.cocktailnotes.application.entity.req.user.UserRegisterReq;
 

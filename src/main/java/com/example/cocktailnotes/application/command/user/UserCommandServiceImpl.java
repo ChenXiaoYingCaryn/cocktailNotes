@@ -1,9 +1,8 @@
-package com.example.cocktailnotes.application.command.User;
+package com.example.cocktailnotes.application.command.user;
 
 import com.example.cocktailnotes.application.convert.UserServiceConvert;
 import com.example.cocktailnotes.domain.entity.UserEntity;
 import com.example.cocktailnotes.domain.service.UserDomainService;
-import com.example.cocktailnotes.infra.entity.UserDo;
 import com.example.cocktailnotes.application.entity.req.user.UserRegisterReq;
 import com.example.cocktailnotes.utils.SnowflakeIdUtils;
 import com.example.cocktailnotes.utils.UploadUtils;
