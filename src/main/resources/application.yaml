@@ -4,3 +4,7 @@ spring:
     url: jdbc:mysql://119.91.63.137:3306/cocktail_notes?characterEncoding=UTF-8&useSSL=true&serverTimezone=UTC
     username: cocktail_notes
     password: 7JRD4WEKDTAwDRHr
+
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
